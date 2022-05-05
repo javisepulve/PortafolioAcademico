@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <script>
+        //se crean dos variables para guardar los numeros del usuario
+        var num1 = prompt("Ingrese el primer número");
+
+        //se crea el sistema if el cual filtra los numeros mayores o distintos a 0
+        if (num1 > 0 && num1 !== 0) {
+            var num2 = prompt("Ingrese el segundo número");
+        }
+        if (num2 > 0 && num2 !== 0) {
+            //las variables ingresadas realizan las operaciones sumar, restar, multiplicar y dividir
+            var suma = parseInt(num1) + parseInt(num2);
+            var resta = parseInt(num1) - parseInt(num2);
+            var multiplica = parseInt(num1) * parseInt(num2);
+            var divide = parseInt(num1) / parseInt(num2);
+            //resultados de los ejercicios impresos en paguina 
+            document.write("el resultado de sumar " + num1 + " + " + num2 + " es: " + suma);
+            document.write('<br>')
+            document.write("el resultado de restar " + num1 + " - " + num2 + " es: " + resta);
+            document.write('<br>')
+            document.write("el resultado de multiplicar " + num1 + " * " + num2 + " es: " + multiplica);
+            document.write('<br>')
+            document.write("el resultado de dividir " + num1 + " / " + num2 + " es: " + divide);
+
+            //se crea el sistema de filtrado para los que no son mayores o distintos a 0
+        } else {
+            //se crea un mensaje para el error 
+            document.write("Ingresar numeros mayores ó diferentes a 0 Favor reiniciar")
+
+        }
+    </script>
+</head>
+
+<body>
+    <footer>
+        <p>Desafio Latam By Francisco Sepulveda</p>
+    </footer>
+</body>
+
+</html>

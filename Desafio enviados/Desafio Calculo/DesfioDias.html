@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Dias</title>
+
+    <Script>
+        const year = 365;
+        const semana = 7;
+        //Solicitar al usuario que ingrese un número
+        var numteclado = parseInt(prompt("Favor Ingresar números para ver equivalencia en años, semanas y días"));
+        //se Calcula el numero ingresado por usuario mas el equivalente entero de este en años
+        var yearUsuario = (Math.floor(numteclado / year));
+        //Se calcula el restante de dias entre el número ingresado y la cantidad de dias por año y se deja en una variable
+        var restoYear = numteclado % year;
+        //Se Calcula el restoYear con la constante semana para mostrar el equivalente entero en semanas y se guarda en una variable 
+        var semanas = (Math.floor(restoYear / semana));
+        //Se Calcula la variable restoYear con la constante semana para sacar el resto de dias
+        var restoSemana = restoYear % semana;
+
+
+        //Se Muestra el numero ingresado por usuario mas el equivalente de este en años, semanas y dias
+        document.write("Su número Ingresado: " + numteclado + " Equivale a: " + yearUsuario + " Años " + semanas + " Semanas " + restoSemana + " Dias");
+    </Script>
+
+</head>
+
+<body>
+    <footer>
+        <p>Desafio Latam By Francisco Sepulveda</p>
+    </footer>
+</body>
+
+</html>

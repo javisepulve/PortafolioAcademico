@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.list-group-item p {
+    margin-bottom: 0;
+}
+
+.list-group-item {
+    padding: 0;
+}
+
+.precio {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.precio2 {
+    display: inline-block;
+    font-size: 0.9rem;
+}

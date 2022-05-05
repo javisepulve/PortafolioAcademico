@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformacion de Temperatura</title>
+
+    <script>
+        //se crean dos variables para guardar los numeros del usuario
+        var num1 = prompt("Ingrese el primer para ");
+        //se guarda informacion en duro para la Transformacion de las temperaturas
+        var num3 = (273.15);
+        var num4 = (1.8); //resultado de 9/5 simplificado
+        var num5 = (32);
+        //las variables ingresadas realizan las operaciones correspondientes para la Transformacionde temperaturas
+        var K = parseInt(num1) + num3;
+        var F = (num1 * num4) + num5;
+        //resultados de las temperaturas Transformadas que se imprimen en paguina 
+        document.write(num1 + " Grados Celsius es igual a:  " + K + " Grados Kelvin");
+        document.write('<br>')
+        document.write(num1 + " Grados Celsius es igual a: " + F + " Grados Fahrenheit");
+        document.write('<br>')
+    </script>
+</head>
+
+<body>
+    <footer>
+        <p>Desafio Latam By Francisco Sepulveda</p>
+    </footer>
+</body>
+
+</html>
